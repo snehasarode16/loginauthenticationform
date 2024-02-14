@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #5ba4f8; /* Blue background */
+        }
+
+        .login-container {
+            background-color: #04090f; /* Darker shade of blue */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker box shadow */
+            width: 300px;
+            color: #fff; /* White text */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px; /* Added margin below title */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 14px; /* Set font size for subtitle */
+            margin-bottom: 20px; /* Added margin below subtitle */
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], /* Changed type from email to text */
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark text */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4b9cf3;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #548bc6;
+        }
+        
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Authentication</h1> <!-- Changed to h1 for title -->
+        <h2>A Web Development Task By Devtern</h2> <!-- Added subtitle -->
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="email">Email/User ID</label> <!-- Changed label text -->
+                <input type="text" id="email" name="email" required> <!-- Changed type from email to text -->
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="options">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="sneha.jpj.avif"alt="Login Image">
+        </div>
+    <div class="login-container">
+        
+        <h1>Login Authentication</h1> 
+        <h2>A Web Development Task By Devtern</h2> 
+        <form method="post" action="login.php">
+            <div class="input-group">
+                <label for="username">Username</label> 
+                <input type="text" id="username" name="username"  placeholder="Enter your Username"> 
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="options">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" name="button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
